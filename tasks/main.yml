@@ -1,8 +1,4 @@
 ---
-- name: dump all
-  hosts: all
-
-  tasks:
-  - name: get variables
-    debug:
-      var: hostvars[inventory_hostname]
+- name: get variables
+  debug:
+    var: hostvars[inventory_hostname]
